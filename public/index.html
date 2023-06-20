@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codeprof ChatApp</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+     
+    <div class="container">
+        <section class="banner-section">
+             
+              <h1>Signup to Join the Group Chat</h1>
+            <p class="no-of-users"></p>
+
+              <div class="join-container">
+
+                    <div class="profile">
+                           <img src="avatar.png" alt="">
+                           <input type="file" id="file">
+                           <label for="file">
+                              Upload
+                           </label>
+
+                    </div>
+                    <input type="text" class="username">
+
+                    <button>Join</button>
+
+              </div>
+        </section>
+
+        <section class="chat-app-section">
+                 <div class="chat-app">
+                    <div class="bar">CODEPROF ACADEMY</div>
+                        <div class="header">
+                        <article>
+                             <div class="brand">
+                              
+                                    <img src="profile_img.jpg" alt="" width="50">
+                                    <span >Codeprof</span>
+                               
+                                
+                             </div>
+                             <img src="menu.png" alt="" class="menu">
+                            </article>
+                            <span class="isTyping">
+                                  
+                            </span>
+
+                        </div>
+
+                                <div class="chat-container">
+                                      
+                                      <div class="left chat">
+                                            <h5>codeprof</h5>
+                                            <p>Hello Everybody. Hope you are all doing fine at your respective work places. Just saying hi
+
+                                            </p>
+                                            
+                                        <small>18/06/2023</small>
+                                      </div>
+                                       <div class="right chat">
+                                            <h5>kenneth</h5>
+                                            <p>Hi codeprof! Glad to hear from you sir. Hope you re doing fine too.
+                                                
+                                            </p>
+                                            
+                                        <small>18/06/2023</small>
+                                      </div>
+
+                                    
+
+                                    
+                                </div>
+                                
+
+
+                                <form class="chat-input-group">
+                                    <input type="text" class="handle" placeholder="handle">
+
+                                    <div class="type-send">
+                                        <textarea class="message"  placeholder="start typing..."></textarea>
+                                        
+                                        <button type="submit"><img src="sendbtn.png" alt="" width="30"></button>
+                                    </div>
+                                </form>
+                               
+                   
+                 </div>
+        </section>
+    </div>
+    
+
+    <script src="/socket.io/socket.io.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script> -->
+    <script src="chat.js"></script>
+</body>
+</html>

@@ -1,0 +1,437 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.banner-section{
+    width: 50%;
+    background-color: crimson;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    gap:40px;
+}
+
+.join-container{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    gap:20px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+
+.banner-section h1{
+    color:white;
+    width: 80%;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 100;
+}
+
+.banner-section p{
+    color:white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.profile{
+   width: 70%;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: center;
+   gap:10px;
+   
+}
+
+.profile img{
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+   padding: 10px;
+   background-color: white;
+}
+
+.join-container input, button{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid grey;
+    outline:none;
+   
+}
+
+#file {
+    display: none;
+}
+
+.profile label {
+    background-color: darkorange;
+    color: white;
+    width: fit-content;
+    padding: 4px 15px;
+    text-align: center;
+    border: none;
+    font-size: 16px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 500;
+
+}
+
+.profile label:hover{
+    background-color: #666;
+}
+
+.join-container button{
+    border:1px solid crimson;
+    color:crimson;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: .4s ease all;
+}
+
+.join-container button:hover{
+    background-color: crimson;
+    color:white;
+}
+
+
+.chat-app-section{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.chat-app{
+    width: 45%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border:10px solid black;
+    border-radius: 20px;
+   
+}
+
+.bar{
+    width:fit-content;
+    background-color: black;
+    align-self: center;
+    font-size: 9px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color:black;
+ 
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-right: 10px;
+    margin: 15px 0;
+}
+
+.header article{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.menu{
+    width: 18px;
+    cursor: pointer;
+}
+
+.brand{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:8px;
+    padding-left: 10px;
+}
+
+
+
+.brand img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 4px;
+    background: linear-gradient(270deg, crimson, blue, orange);
+
+}
+
+.brand span{
+    font-weight: bold;
+    color:black;
+    text-align: left;
+    font-size: 14px;
+}
+
+
+.isTyping {
+    width: fit-content;
+    text-align: center;
+    padding: 5px;
+    padding-left: 10px;
+    padding-top: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: green;
+    font-style: italic;
+    border-radius: 10px;
+    font-size: 11px;
+    display: none;
+
+}
+
+.chat-container{
+    width: 100%;
+    height:70%;
+    overflow-y:scroll;
+    background:linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)),url("bg.avif");
+    background-size: cover;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap:20px;
+}
+
+
+.chat-container::-webkit-scrollbar{
+    appearance: none;
+    width: 4px;
+    
+}
+
+.chat-container::-webkit-scrollbar-thumb{
+    background-color: crimson;
+    border-radius: 4px;
+}
+
+
+
+.chat small{
+    font-size: 11px;
+    font-style: italic;
+    font-weight: bold;
+    color:darkorange;
+}
+
+.left{
+
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 8px;
+    border-radius: 10px;
+    background-color: rgb(186, 255, 218);
+    align-self:flex-start;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-bottom-left-radius: 0;
+}
+
+.left p{
+        width: 100%;
+        font-size: 12px;
+        color: black;
+        font-weight: 500;
+        text-align: left;
+}
+
+.right{
+
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 8px;
+    border-radius: 10px;
+    background-color: rgb(173, 231, 252);
+    align-self:flex-end ;
+    justify-content: flex-start;
+    align-items: flex-end;
+    border-bottom-right-radius: 0;
+}
+
+.right p{
+        width: 100%;
+        font-size: 12px;
+        color: black;
+        font-weight: 500;
+        text-align: right;
+}
+
+.chat-input-group{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+.chat-input-group > *{
+    width: 100%;
+   
+}
+
+.chat-input-group input{
+    padding: 8px;
+    background-color: aliceblue;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    color:crimson;
+    
+}
+
+.chat-input-group input::placeholder {
+    color:rgb(194, 194, 194);
+}
+
+.chat-input-group .type-send{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.type-send textarea{
+    width: 85%;
+    height: 40px;
+    padding: 8px;
+    border: none;
+    border-top: none;
+    outline: none;
+    resize: none;
+}
+
+.type-send textarea::-webkit-scrollbar {
+    appearance: none;
+    width: 1px;
+}
+.type-send button{
+    width: 15%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.type-send button:hover img{
+    background-color: aliceblue;
+}
+
+.type-send button:active img{
+    filter: grayscale(1)
+}
+.type-send button img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: rgb(255, 235, 235);
+}
+
+
+
+
+@media(max-width:450px){
+.container {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+        .banner-section {
+            width: 100%;
+            background-color: crimson;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+                .chat-app-section {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+        
+                }
+
+
+                                .chat-app {
+                                    width: 90%;
+                                    height: 90%;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: flex-start;
+                                    align-items: flex-start;
+                                    border: 10px solid black;
+                                    border-radius: 20px;
+                
+                                }
+
+.header {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 14px;
+                margin: 15px 0;
+            }
+
+                                
+}
